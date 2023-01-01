@@ -1,11 +1,14 @@
+function getComputerChoice(){
+    const choice = ["rock","paper","scissors"];
+    return choice[Math.floor(Math.random()*choice.length)];
 
+}
 function startGame(){
     playerCount = 0;
     computerCount = 0;
     for (let i = 0; i < 5; i++) {
         playerChoice = prompt("enter choice").toLowerCase();
-        const choice = ["rock","paper","scissors"];
-        const computerChoince =choice[Math.floor(Math.random()*choice.length)];
+        const computerChoince = getComputerChoice();
         if (playerChoice == "rock" && computerChoince == "scissors"|| playerChoice == "scissors" && computerChoince == "paper" || playerChoice == "rock" && computerChoince == "paper") {
            playerCount += 1;
            console.log("player count: Wins round", {playerCount})
