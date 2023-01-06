@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-color: rgb(146, 143, 137);
+    color: black;
+    font-size: bold;
+}
+.headerMain,.score_names,.who_wins {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.score_names {
+    gap: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+    
+}
+.points{
+    text-align: center;
+}
+.header1,.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.headerMain{
+    flex-direction: column;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+}
+#rock{
+    height: 190px;
+    width: 80px;
+}
+#paper{
+    height: -70px;
+    width: 20px;
+}
+
