@@ -1,44 +1,130 @@
-body{
-    margin: 0;
-    background-color: rgb(146, 143, 137);
-    color: black;
-    font-size: bold;
+body {
+    margin-top: 46px;
+    background-color: #51545e;
+    color: whitesmoke;
 }
-.headerMain,.score_names,.who_wins {
+
+.headerMain,
+.score_names,
+.who_wins {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.score_names {
-    gap: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
 
-    
+.score_names {
+    gap: 30px;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: -18px;
 }
-.points{
+
+.who_wins,
+.tie {
+    margin-bottom: 9px;
+    font-size: 22px;
+    font-family: serif;
+    color: white;
     text-align: center;
 }
-.header1,.header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 22px;
+
+.points {
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    margin-top: -2px;
 }
-.headerMain{
+
+.header1,
+.header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-top: 9px;
+}
+
+.headerMain {
     flex-direction: column;
 }
-.options{
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 67px;
+    justify-content: center;
+}
+
+.final_rule {
+    text-align: center;
+    font-size: 18px;
+}
+
+.rules_title {
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    margin-bottom: -22px;
+    font-weight: bold;
+}
+
+.rules ol {
+    display: flex;
+    flex-direction: column;
+    margin-left: 155px;
+}
+
+.onload {
+    position: absolute;
+    background-color: #42538d;
+    width: 100%;
+    padding: 18px;
+    border-radius: 10px;
+    transition: ease-in-out 2s;
+    color: whitesmoke;
+    transform: translateY(-204px);
+}
+
+.onload:hover {
+    transform: translateY(-50px);
+}
+
+.begin {
+    border-radius: 5px;
+}
+
+.begin_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 300px;
-}
-#rock{
-    height: 190px;
-    width: 80px;
-}
-#paper{
-    height: -70px;
-    width: 20px;
 }
 
+button {
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px;
+    width: 100px;
+    background-color: #ad8555;
+    font-size: 18px
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+.play_btn {
+    position: relative;
+}
+
+button#play_btn {
+    position: absolute;
+    background-color: yellow;
+    font-size: 16px;
+    width: 100%;
+    height: 47px;
+    transform: translateY(-900px);
+    transition: 2s ease-in;
+    text-align: center;
+    z-index: 1;
+}
