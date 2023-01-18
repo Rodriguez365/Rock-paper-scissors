@@ -11,49 +11,48 @@
 </head>
 
 <body>
-    <div class="onload">
-        <div class="rules">
-            <ol>
-                <li>Rock beats Scissors. </li>
-                <li>Scissors beats Paper. </li>
-                <li>Paper beats Rock. </li>
-            </ol>
+    <div id="main_container">
+        <div class="onload">
+            <div class="rules">
+                <ol>
+                    <li>Rock beats Scissors. </li>
+                    <li>Scissors beats Paper. </li>
+                    <li>Paper beats Rock. </li>
+                </ol>
+            </div>
+            <div class="final_rule">
+                <p>Whoever or whatever score to 5 points first, wins the game</p>
+            </div>
+            <div class="rules_title">
+                <p>RULES</p>
+            </div>
         </div>
-        <div class="final_rule">
-            <p>Whoever or whatever score to 5 points first, wins the game</p>
+        <div class="headerMain">
+            <h2 class="header1">Rock-Paper-Scissors</h2>
+            <h3 class="header">Human Vs Computer</h3>
         </div>
-        <div class="rules_title">
-            <p>RULES</p>
-        </div>
-    </div>
-    <div class="headerMain">
-        <h2 class="header1">Rock-Paper-Scissors</h2>
-        <h3 class="header">Human Vs Computer</h3>
-    </div>
-    <h2 class="points">Points</h2>
-    <div class="score_names">
+        <h2 class="points">Points</h2>
+        <div class="score_names">
 
-        <div class="human">
-            <h3>Human</h3>
-            <p class="human_score"></p>
+            <div class="human">
+                <h3>Human</h3>
+                <p class="human_score"></p>
+            </div>
+            <div class="computer">
+                <h3>Computer</h3>
+                <p class="computer_score"></p>
+            </div>
         </div>
-        <div class="computer">
-            <h3>Computer</h3>
-            <p class="computer_score"></p>
-        </div>
-    </div>
-    <h3 class="tie"></h3>
-    <div class="who_wins">
-        <h3></h3>
-    </div>
+        <h3 class="tie">...</h3>
 
-    <div class="options">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div>
-    <div class="play_btn">
-        <button id="play_btn">Play Again</button>
+        <div class="options">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+        <div class="play_btn">
+            <button id="play_btn">Play Again</button>
+        </div>
     </div>
     <script src="javascript.js">
     </script>

@@ -4,7 +4,6 @@ let computerChoince = "";
 let playerChoice = "";
 let tie_plus = 0;
 const tie = document.querySelector(".tie");
-const who_wins = document.querySelector(".who_wins");
 const play_again = document.querySelector("#play_btn");
 
 const humanscore = document.querySelector(".human_score")
@@ -21,8 +20,7 @@ play_again.addEventListener("click", () => {
     humanscore.textContent = 0;
     playerCount = 0;
     computerCount = 0;
-    who_wins.textContent = "";
-    tie.textContent = "";
+    tie.textContent = "...";
     play_again.style.transform = "translateY(-900px)";
 })
 
@@ -49,13 +47,14 @@ function playRound(playerChoice, computerChoince) {
     }
 
     if (playerCount == 5) {
-        who_wins.textContent = "Congrats, You Just Beat a Freaking Computer ";
+        tie.textContent = "Congrats, You Just Beat a Freaking Computer ";
         playGame();
-        tie.textContent = "";
+
     } else if (computerCount == 5) {
-        who_wins.textContent = "Sorry, You Lost";
+        tie.textContent = "Sorry, You Lost";
         playGame();
-        tie.textContent = "";
+
+
 
 
     }
@@ -67,7 +66,7 @@ buttons.forEach((button) => {
         playerChoice = button.id;
         if (playerCount == 5 || computerCount == 5) {
             tie.textContent = "Game Over. Click \"Play Again\" to continue"
-            who_wins.textContent = "";
+
         } else {
             computerChoince = getComputerChoice();
             playRound(playerChoice, computerChoince);

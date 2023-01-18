@@ -4,6 +4,12 @@ body {
     color: whitesmoke;
 }
 
+#main_container {
+    background-color: #131010;
+    height: 413px;
+    border-radius: 5px;
+}
+
 .headerMain,
 .score_names,
 .who_wins {
@@ -78,7 +84,7 @@ body {
 .onload {
     position: absolute;
     background-color: #42538d;
-    width: 100%;
+    width: 95%;
     padding: 18px;
     border-radius: 10px;
     transition: ease-in-out 2s;
@@ -115,6 +121,8 @@ button:hover {
 
 .play_btn {
     position: relative;
+    width: 184px;
+    margin-left: 296px;
 }
 
 button#play_btn {
@@ -127,4 +135,46 @@ button#play_btn {
     transition: 2s ease-in;
     text-align: center;
     z-index: 1;
+}
+
+@media (max-width:600px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .onload {
+        width: 81%;
+        transform: translateY(-226px);
+    }
+    .header1,
+    .header {
+        font-size: 22px;
+    }
+    .points {
+        font-size: 20px;
+    }
+    .rules ol {
+        margin-left: -18px;
+    }
+    .options {
+        gap: 19px;
+    }
+    button {
+        width: 89px;
+    }
+    .who_wins,
+    .tie {
+        font-size: 17px;
+    }
+    .play_btn {
+        width: 220px;
+        margin-left: 71px;
+    }
+    #main_container {
+        background-color: #131010;
+        height: 376px;
+        border-radius: 5px;
+        width: 95%;
+    }
 }
